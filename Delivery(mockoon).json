@@ -1,0 +1,155 @@
+{
+    "source": "mockoon:1.13.0",
+    "data": [
+        {
+            "type": "environment",
+            "item": {
+                "uuid": "",
+                "lastMigration": 13,
+                "name": "Demo API",
+                "endpointPrefix": "foodDeli/api",
+                "latency": 0,
+                "port": 8000,
+                "routes": [
+                    {
+                        "uuid": "",
+                        "documentation": "",
+                        "method": "get",
+                        "endpoint": "homeBannerList",
+                        "responses": [
+                            {
+                                "uuid": "",
+                                "body": "{\n    \"result\": [\n            {\n                \"id\": 1,\n                \"image\": \"banner_one\"\n            },\n            {\n                \"id\": 2,\n                \"image\": \"banner_two\"\n            },\n            {\n                \"id\": 3,\n                \"image\": \"banner_three\"\n            },\n            {\n                \"id\": 4,\n                \"image\": \"banner_four\"\n            }\n        ],\n    \"statusCode\": 200,\n    \"message\": \"Success\"\n}",
+                                "latency": 0,
+                                "statusCode": 200,
+                                "label": "",
+                                "headers": [],
+                                "filePath": "",
+                                "sendFileAsBody": false,
+                                "rules": [],
+                                "rulesOperator": "OR",
+                                "disableTemplating": false
+                            }
+                        ],
+                        "enabled": true,
+                        "randomResponse": false
+                    },
+                    {
+                        "uuid": "",
+                        "documentation": "",
+                        "method": "get",
+                        "endpoint": "categoryList",
+                        "responses": [
+                            {
+                                "uuid": "",
+                                "body": "{\n    \"result\": [\n            {\n                \"id\": 1,\n                \"name\": \"Pizza\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Sushi\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Drinks\"\n            }\n        ],\n    \"statusCode\": 200,\n    \"message\": \"Success\"\n}",
+                                "latency": 0,
+                                "statusCode": 200,
+                                "label": "",
+                                "headers": [],
+                                "filePath": "",
+                                "sendFileAsBody": false,
+                                "rules": [],
+                                "rulesOperator": "OR",
+                                "disableTemplating": false
+                            }
+                        ],
+                        "enabled": true,
+                        "randomResponse": false
+                    },
+                    {
+                        "uuid": "",
+                        "documentation": "",
+                        "method": "get",
+                        "endpoint": "foodList/1",
+                        "responses": [
+                            {
+                                "uuid": "",
+                                "body": "{\n    \"result\": [\n            {\n                \"id\": 1,\n                \"title\": \"Ham & Crab Sticks\",\n                \"image\": \"pizza_one\",\n                \"description\": \"Variety is the keyword for the creation! Fresh prawns, succulent crab sticks, ham and juicy pineapple.\",\n                \"unit\" : \"1 gram, 2 pieces\",\n                \"price\": 50\n            },\n            {\n                \"id\": 2,\n                \"title\": \"Double Cheese\",\n                \"image\": \"pizza_two\",\n                \"description\": \"Topped with lots of fresh prawns, crab sticks, mussels and calamari with Marinara sauce.\",\n                \"unit\" : \"1 gram, 6 pieces\",\n                \"price\": 35\n            },\n            {\n                \"id\": 3,\n                \"title\": \"Chicken Trio\",\n                \"image\": \"pizza_three\",\n                \"description\": \"We pick the tastiest ingredients and create this sensational menu! Every form pork sausages.\",\n                \"unit\" : \"0.5 gram, 3 pieces\",\n                \"price\": 45\n            }\n            ,\n            {\n                \"id\": 4,\n                \"title\": \"Ham & Mushroom\",\n                \"image\": \"pizza_four\",\n                \"description\": \"Yummy combination of sweet and sour flavor of juicy pineapples with loads of ham and bacon.\",\n                \"unit\" : \"0.5 gram, 2 pieces\",\n                \"price\": 75\n            }\n            ,\n            {\n                \"id\": 5,\n                \"title\": \"Double Pepperoni\",\n                \"image\": \"pizza_five\",\n                \"description\": \"Pizza (Italian: [ˈpittsa], Neapolitan: [ˈpittsə]) is a savory dish of Italian origin consisting of a usually round, flattened base\",\n                \"unit\" : \"1 gram, 1 pieces\",\n                \"price\": 100\n            }\n        ],\n    \"statusCode\": 200,\n    \"message\": \"Success\"\n}",
+                                "latency": 0,
+                                "statusCode": 200,
+                                "label": "",
+                                "headers": [],
+                                "filePath": "",
+                                "sendFileAsBody": false,
+                                "rules": [],
+                                "rulesOperator": "OR",
+                                "disableTemplating": false
+                            }
+                        ],
+                        "enabled": true,
+                        "randomResponse": false
+                    },
+                    {
+                        "uuid": "",
+                        "documentation": "",
+                        "method": "get",
+                        "endpoint": "foodList/2",
+                        "responses": [
+                            {
+                                "uuid": "",
+                                "body": "{\n    \"result\": [\n            {\n                \"id\": 6,\n                \"title\": \"Sashimi\",\n                \"image\": \"sushi_one\",\n                \"description\": \"VarietyTechnically not sushi! While sushi is fish that is served with rice and may be adorned with other ingredients.\",\n                \"unit\" : \"0.1 gram, 10 pieces\",\n                \"price\": 50\n            },\n            {\n                \"id\": 7,\n                \"title\": \"Nigiri\",\n                \"image\": \"sushi_two\",\n                \"description\": \"Nigiri is a style of sushi that is made by molding a ball of vinegared rice by hand and topping it with a slice of raw fish.\",\n                \"unit\" : \"0.2 gram, 8 pieces\",\n                \"price\": 35\n            },\n            {\n                \"id\": 8,\n                \"title\": \"Chirashi\",\n                \"image\": \"sushi_three\",\n                \"description\": \"Chirashi, meaning, “scattered,” is a bowl of vinegared rice topped with a mix of raw fish (typically chef’s choice) and various garnishes.\",\n                \"unit\" : \"0.5 gram, 3 pieces\",\n                \"price\": 45\n            }\n            ,\n            {\n                \"id\": 9,\n                \"title\": \"California Roll\",\n                \"image\": \"sushi_four\",\n                \"description\": \"California Rolls look like an inside-out sushi roll with a layer of rice on the outside and a sheet of nori on the inside.\",\n                \"unit\" : \"0.5 gram, 2 pieces\",\n                \"price\": 75\n            }\n            ,\n            {\n                \"id\": 10,\n                \"title\": \"Tempura Roll\",\n                \"image\": \"sushi_five\",\n                \"description\": \"Tempura Rolls, like California Rolls, have the rice on the outside around a sheet of nori containing tempura-fried shrimp along with vegetables like avocado and cucumber. \",\n                \"unit\" : \"1 gram, 1 pieces\",\n                \"price\": 100\n            }\n        ],\n    \"statusCode\": 200,\n    \"message\": \"Success\"\n}",
+                                "latency": 0,
+                                "statusCode": 200,
+                                "label": "",
+                                "headers": [],
+                                "filePath": "",
+                                "sendFileAsBody": false,
+                                "rules": [],
+                                "rulesOperator": "OR",
+                                "disableTemplating": false
+                            }
+                        ],
+                        "enabled": true,
+                        "randomResponse": false
+                    },
+                    {
+                        "uuid": "",
+                        "documentation": "",
+                        "method": "get",
+                        "endpoint": "foodList/3",
+                        "responses": [
+                            {
+                                "uuid": "",
+                                "body": "{\n    \"result\": [\n            {\n                \"id\": 11,\n                \"title\": \"Tea\",\n                \"image\": \"drink_one\",\n                \"description\": \"VarietyTechnicallyTea has been around almost as long as civilization—it was discovered nearly 5,000 years ago in ancient China.\",\n                \"unit\" : \"30 ml, 1 cup\",\n                \"price\": 50\n            },\n            {\n                \"id\": 12,\n                \"title\": \"Coffee\",\n                \"image\": \"drink_two\",\n                \"description\": \"Coffee is considered by many to be the most popular hot beverage in the world.\",\n                \"unit\" : \"0.5 l, 1 bottle\",\n                \"price\": 35\n            },\n            {\n                \"id\": 13,\n                \"title\": \"Beer\",\n                \"image\": \"drink_three\",\n                \"description\": \"If you’d ask a beer lover, they’d tell you that beer is the best drink in the world.\",\n                \"unit\" : \"0.75 l, 2 bottles\",\n                \"price\": 45\n            }\n            ,\n            {\n                \"id\": 14,\n                \"title\": \"Soup\",\n                \"image\": \"drink_four\",\n                \"description\": \"CaliforniaAlthough soup isn’t technically a beverage, it deserves a spot on this list.\",\n                \"unit\" : \" 500 ml, 2 cups\",\n                \"price\": 75\n            }\n            ,\n            {\n                \"id\": 15,\n                \"title\": \"Coca-Cola\",\n                \"image\": \"drink_five\",\n                \"description\": \"Although Coca-Cola doesn’t fall into the traditional category of types of drinks because it’s actually a specific brand. \",\n                \"unit\" : \"300 ml, 1 cup\",\n                \"price\": 100\n            }\n        ],\n    \"statusCode\": 200,\n    \"message\": \"Success\"\n}",
+                                "latency": 0,
+                                "statusCode": 200,
+                                "label": "",
+                                "headers": [],
+                                "filePath": "",
+                                "sendFileAsBody": false,
+                                "rules": [],
+                                "rulesOperator": "OR",
+                                "disableTemplating": false
+                            }
+                        ],
+                        "enabled": true,
+                        "randomResponse": false
+                    }
+                ],
+                "proxyMode": false,
+                "proxyHost": "",
+                "https": false,
+                "cors": true,
+                "headers": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "proxyReqHeaders": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ],
+                "proxyResHeaders": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ]
+            }
+        }
+    ]
+}
