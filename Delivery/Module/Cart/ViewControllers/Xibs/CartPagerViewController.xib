@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CartPagerViewController" customModule="Delivery" customModuleProvider="target">
+            <connections>
+                <outlet property="btnMenu" destination="3MY-nJ-DN2" id="0Lx-zy-enD"/>
+                <outlet property="buttonBarView" destination="E6y-KQ-PbW" id="2yb-sk-pd4"/>
+                <outlet property="containerView" destination="LFC-MB-M2q" id="aln-tX-pUV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7B-Q4-rmQ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="39"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MY-nJ-DN2">
+                            <rect key="frame" x="10" y="10" width="100" height="19"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="9A0-fQ-5YA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                            <state key="normal" title="Menu" image="chevron.left" catalog="system">
+                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="3MY-nJ-DN2" firstAttribute="top" secondItem="y7B-Q4-rmQ" secondAttribute="top" constant="10" id="ffl-Xn-fNe"/>
+                        <constraint firstAttribute="bottom" secondItem="3MY-nJ-DN2" secondAttribute="bottom" constant="10" id="mL8-fl-W5Z"/>
+                        <constraint firstItem="3MY-nJ-DN2" firstAttribute="leading" secondItem="y7B-Q4-rmQ" secondAttribute="leading" constant="10" id="mmY-u2-r9R"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFC-MB-M2q">
+                    <rect key="frame" x="0.0" y="163" width="414" height="699"/>
+                </scrollView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="E6y-KQ-PbW" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                    <rect key="frame" x="0.0" y="83" width="414" height="80"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="KWg-3y-nLI"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="A8X-AD-SPW">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClI-Tg-3Je" customClass="RoundedCornerUIButton" customModule="Delivery" customModuleProvider="target">
+                    <rect key="frame" x="334" y="782" width="60" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="eNK-5C-EMs"/>
+                        <constraint firstAttribute="width" secondItem="ClI-Tg-3Je" secondAttribute="height" multiplier="1:1" id="vkJ-Wr-lAi"/>
+                    </constraints>
+                    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="creditcard.fill" catalog="system"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ClI-Tg-3Je" secondAttribute="bottom" constant="20" id="700-Bw-OVg"/>
+                <constraint firstItem="LFC-MB-M2q" firstAttribute="top" secondItem="E6y-KQ-PbW" secondAttribute="bottom" id="8om-MM-jke"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ClI-Tg-3Je" secondAttribute="trailing" constant="20" id="D9h-Ey-dDp"/>
+                <constraint firstItem="y7B-Q4-rmQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Edw-GT-PuQ"/>
+                <constraint firstItem="E6y-KQ-PbW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GnL-P8-Cuu"/>
+                <constraint firstItem="y7B-Q4-rmQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Nfp-Ax-Qpv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="LFC-MB-M2q" secondAttribute="bottom" id="O13-mf-pnO"/>
+                <constraint firstItem="LFC-MB-M2q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Soc-Of-B23"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LFC-MB-M2q" secondAttribute="trailing" id="jCU-Em-z9F"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="E6y-KQ-PbW" secondAttribute="trailing" id="jzu-to-UL6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="y7B-Q4-rmQ" secondAttribute="trailing" id="rLo-sY-AWd"/>
+                <constraint firstItem="E6y-KQ-PbW" firstAttribute="top" secondItem="y7B-Q4-rmQ" secondAttribute="bottom" id="zAJ-4w-nOO"/>
+            </constraints>
+            <point key="canvasLocation" x="50.724637681159422" y="58.928571428571423"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="ClI-Tg-3Je">
+            <size key="intrinsicContentSize" width="24" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="creditcard.fill" catalog="system" width="128" height="88"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

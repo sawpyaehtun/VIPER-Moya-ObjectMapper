@@ -1,0 +1,56 @@
+PODS:
+  - Alamofire (5.4.1)
+  - FSPagerView (0.8.3)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
+  - ObjectMapper (4.2.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SwiftyJSON (5.0.0)
+  - XLPagerTabStrip (9.0.0)
+
+DEPENDENCIES:
+  - FSPagerView
+  - Moya
+  - Moya/RxSwift
+  - ObjectMapper
+  - RxCocoa
+  - RxSwift
+  - SwiftyJSON
+  - XLPagerTabStrip
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FSPagerView
+    - Moya
+    - ObjectMapper
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SwiftyJSON
+    - XLPagerTabStrip
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
+
+PODFILE CHECKSUM: 8659322a3591b13e6a25d506a6dcfcced44340d6
+
+COCOAPODS: 1.10.0

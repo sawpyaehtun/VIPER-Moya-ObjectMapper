@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="541" id="KGk-i7-Jjw" customClass="FoodItemTableViewCell" customModule="Delivery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="541"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="541"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PzB-l7-lHi" customClass="CardView" customModule="Delivery" customModuleProvider="target">
+                        <rect key="frame" x="20" y="10" width="353" height="404"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza_four" translatesAutoresizingMaskIntoConstraints="NO" id="MiC-bV-UMB" customClass="CustomRoundedCornerUIImageView" customModule="Delivery" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="353" height="247"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MiC-bV-UMB" secondAttribute="height" multiplier="1:0.7" id="GrH-mW-ndX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="topLeftCornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="topRightCornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="showColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5UC-S7-2R8">
+                                <rect key="frame" x="20" y="267" width="313" height="24"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the food description. This is the food description. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1VO-ke-Zg6">
+                                <rect key="frame" x="20" y="301" width="313" height="33"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ei2-DR-djJ" customClass="RoundedCornerUIButton" customModule="Delivery" customModuleProvider="target">
+                                <rect key="frame" x="233" y="354" width="100" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="HvL-me-mpq"/>
+                                    <constraint firstAttribute="height" constant="30" id="bDr-wK-aBu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                                <state key="normal" title="45 used">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" title="added +1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.61176470589999998" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="450 grams, 18 pieces" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fn5-fC-ma6">
+                                <rect key="frame" x="20" y="361" width="203" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ei2-DR-djJ" secondAttribute="bottom" constant="20" id="16g-xr-R1G"/>
+                            <constraint firstAttribute="trailing" secondItem="ei2-DR-djJ" secondAttribute="trailing" constant="20" id="5t9-jK-Rdb"/>
+                            <constraint firstItem="1VO-ke-Zg6" firstAttribute="top" secondItem="5UC-S7-2R8" secondAttribute="bottom" constant="10" id="68k-89-guv"/>
+                            <constraint firstItem="fn5-fC-ma6" firstAttribute="leading" secondItem="PzB-l7-lHi" secondAttribute="leading" constant="20" id="Gor-8j-Cvl"/>
+                            <constraint firstItem="5UC-S7-2R8" firstAttribute="leading" secondItem="PzB-l7-lHi" secondAttribute="leading" constant="20" id="IJM-CZ-sLT"/>
+                            <constraint firstItem="MiC-bV-UMB" firstAttribute="leading" secondItem="PzB-l7-lHi" secondAttribute="leading" id="JF8-aL-F47"/>
+                            <constraint firstItem="1VO-ke-Zg6" firstAttribute="leading" secondItem="5UC-S7-2R8" secondAttribute="leading" id="Mr8-rd-rkW"/>
+                            <constraint firstAttribute="trailing" secondItem="5UC-S7-2R8" secondAttribute="trailing" constant="20" id="V1d-8z-jvC"/>
+                            <constraint firstItem="fn5-fC-ma6" firstAttribute="centerY" secondItem="ei2-DR-djJ" secondAttribute="centerY" id="dsL-GJ-B29"/>
+                            <constraint firstItem="MiC-bV-UMB" firstAttribute="top" secondItem="PzB-l7-lHi" secondAttribute="top" id="et8-5c-bYS"/>
+                            <constraint firstItem="1VO-ke-Zg6" firstAttribute="trailing" secondItem="5UC-S7-2R8" secondAttribute="trailing" id="fRh-in-7kY"/>
+                            <constraint firstItem="ei2-DR-djJ" firstAttribute="leading" secondItem="fn5-fC-ma6" secondAttribute="trailing" constant="10" id="fui-iz-sqD"/>
+                            <constraint firstItem="ei2-DR-djJ" firstAttribute="top" secondItem="1VO-ke-Zg6" secondAttribute="bottom" constant="20" id="kwJ-Xo-Vsy"/>
+                            <constraint firstItem="5UC-S7-2R8" firstAttribute="top" secondItem="MiC-bV-UMB" secondAttribute="bottom" constant="20" id="m8c-dC-aBV"/>
+                            <constraint firstAttribute="trailing" secondItem="MiC-bV-UMB" secondAttribute="trailing" id="sKa-pZ-5I4"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PzB-l7-lHi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Aw1-UO-o0V"/>
+                    <constraint firstAttribute="trailing" secondItem="PzB-l7-lHi" secondAttribute="trailing" constant="20" id="Ngn-rq-yfY"/>
+                    <constraint firstItem="PzB-l7-lHi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="XkY-GS-ana"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="PzB-l7-lHi" secondAttribute="bottom" constant="10" id="Y4O-0D-N0i"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnAdd" destination="ei2-DR-djJ" id="b8b-lw-rwB"/>
+                <outlet property="imgFood" destination="MiC-bV-UMB" id="usm-4r-ZSX"/>
+                <outlet property="lblFoodCount" destination="fn5-fC-ma6" id="C1R-bm-Vcn"/>
+                <outlet property="lblFoodDescription" destination="1VO-ke-Zg6" id="L6R-En-xoD"/>
+                <outlet property="lblFoodTitle" destination="5UC-S7-2R8" id="B3M-rj-Lxn"/>
+            </connections>
+            <point key="canvasLocation" x="261.59420289855075" y="292.29910714285711"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="MiC-bV-UMB">
+            <size key="intrinsicContentSize" width="1000" height="667"/>
+        </designable>
+        <designable name="ei2-DR-djJ">
+            <size key="intrinsicContentSize" width="43" height="26"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="pizza_four" width="1000" height="667"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
