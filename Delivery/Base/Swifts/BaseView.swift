@@ -7,7 +7,7 @@
 
 import Foundation
 
-@objc protocol BaseView : class {
+@objc protocol BaseView : AnyObject {
     @objc optional func showLoading()
     @objc optional func hideLoading()
     @objc optional func showError(error : Error)

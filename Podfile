@@ -14,6 +14,7 @@ target 'Delivery' do
   pod 'SwiftyJSON'
   pod 'FSPagerView'
   pod 'XLPagerTabStrip'
+  pod 'NVActivityIndicatorView' , '~> 4.8.0'
 
   target 'DeliveryTests' do
     inherit! :search_paths

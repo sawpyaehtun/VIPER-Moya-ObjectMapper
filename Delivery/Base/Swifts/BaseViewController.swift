@@ -8,6 +8,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import NVActivityIndicatorView
 
 class BaseViewController: UIViewController {
         
@@ -57,15 +58,20 @@ class BaseViewController: UIViewController {
     
 }
 
+// Note: this is for Loading View
+extension UIViewController : NVActivityIndicatorViewable {
+    
+}
+
 //MARK:- BaseView
 extension BaseViewController : BaseView {
     
     func showLoading() {
-        
+        startAnimating(CGSize(width: 30, height: 30), message: "", type: .lineSpinFadeLoader)
     }
     
     func hideLoading() {
-        
+        stopAnimating()
     }
     
     func showError(error: Error) {
