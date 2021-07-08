@@ -56,3 +56,19 @@ class BaseViewController: UIViewController {
     }
     
 }
+
+//MARK:- BaseView
+extension BaseViewController : BaseView {
+    
+    func showLoading() {
+        
+    }
+    
+    func hideLoading() {
+        
+    }
+    
+    func showError(error: Error) {
+        print("error error error")
+    }
+}

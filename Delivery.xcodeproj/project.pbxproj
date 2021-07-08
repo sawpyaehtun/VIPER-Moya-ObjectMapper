@@ -107,6 +107,8 @@
 		88D2925C26349B1F00E72C48 /* OrdersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D2925B26349B1F00E72C48 /* OrdersPresenter.swift */; };
 		88D2926126349B9C00E72C48 /* InformationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D2926026349B9C00E72C48 /* InformationsPresenter.swift */; };
 		88D2926926349CE800E72C48 /* InformationsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D2926826349CE800E72C48 /* InformationsBuilder.swift */; };
+		A7D0772C2696919E00528433 /* TargetType + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0772B2696919E00528433 /* TargetType + Extension.swift */; };
+		A7D0772F269691F100528433 /* AlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0772E269691F100528433 /* AlamofireManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,6 +239,8 @@
 		88D2926026349B9C00E72C48 /* InformationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationsPresenter.swift; sourceTree = "<group>"; };
 		88D2926826349CE800E72C48 /* InformationsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationsBuilder.swift; sourceTree = "<group>"; };
 		A08EE9F770DFDE9260E59152 /* Pods-Delivery-DeliveryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Delivery-DeliveryUITests.debug.xcconfig"; path = "Target Support Files/Pods-Delivery-DeliveryUITests/Pods-Delivery-DeliveryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A7D0772B2696919E00528433 /* TargetType + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetType + Extension.swift"; sourceTree = "<group>"; };
+		A7D0772E269691F100528433 /* AlamofireManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireManager.swift; sourceTree = "<group>"; };
 		CB7AEF01801955163D0E495E /* Pods-DeliveryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryTests.release.xcconfig"; path = "Target Support Files/Pods-DeliveryTests/Pods-DeliveryTests.release.xcconfig"; sourceTree = "<group>"; };
 		F79D6AC50D1C260E6DEF8526 /* Pods-DeliveryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryTests.debug.xcconfig"; path = "Target Support Files/Pods-DeliveryTests/Pods-DeliveryTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -361,6 +365,7 @@
 		886CA0C02633108000541C64 /* Delivery */ = {
 			isa = PBXGroup;
 			children = (
+				A7D0772D269691EB00528433 /* Manager */,
 				8842D90A26345EF500688782 /* Network */,
 				886CA16E263316B300541C64 /* Utility */,
 				886CA1482633134000541C64 /* Entity */,
@@ -527,6 +532,7 @@
 				886EDA9726332081004DE873 /* UIBezierPath + Extension.swift */,
 				886EDACD26332292004DE873 /* UIFont + Extension.swift */,
 				886EDB082633319D004DE873 /* UIView + Extension.swift */,
+				A7D0772B2696919E00528433 /* TargetType + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -796,6 +802,14 @@
 				886EDAED263326CE004DE873 /* BaseTableViewController.xib */,
 			);
 			path = Xibs;
+			sourceTree = "<group>";
+		};
+		A7D0772D269691EB00528433 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0772E269691F100528433 /* AlamofireManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		D57B2FA961586098D1A9D095 /* Pods */ = {
@@ -1089,6 +1103,7 @@
 				886CA156263313E600541C64 /* BaseBuilder.swift in Sources */,
 				886CA0C22633108000541C64 /* AppDelegate.swift in Sources */,
 				8842D9262634638F00688782 /* NetworkClient.swift in Sources */,
+				A7D0772C2696919E00528433 /* TargetType + Extension.swift in Sources */,
 				8842D94426347B6300688782 /* FoodListView.swift in Sources */,
 				886CA15B2633146100541C64 /* HomeView.swift in Sources */,
 				8842D90D26345F1300688782 /* HomeBannerListResponse.swift in Sources */,
@@ -1140,6 +1155,7 @@
 				886EDAE2263324AB004DE873 /* FoodPagerViewController.swift in Sources */,
 				88D2926126349B9C00E72C48 /* InformationsPresenter.swift in Sources */,
 				886EDB2D26335AF8004DE873 /* CustomRoundedCornerUIImageView.swift in Sources */,
+				A7D0772F269691F100528433 /* AlamofireManager.swift in Sources */,
 				886CA165263314D800541C64 /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

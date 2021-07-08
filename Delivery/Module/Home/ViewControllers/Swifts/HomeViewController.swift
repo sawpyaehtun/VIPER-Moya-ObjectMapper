@@ -266,7 +266,7 @@ extension HomeViewController : FSPagerViewDelegate , FSPagerViewDataSource {
         return cell
     }
     
-    func showError(error: Error) {
+    override func showError(error: Error) {
         print("Can't connected to server or something")
     }
         
@@ -284,3 +284,5 @@ extension HomeViewController : FSPagerViewDelegate , FSPagerViewDataSource {
     }
     
 }
+
+

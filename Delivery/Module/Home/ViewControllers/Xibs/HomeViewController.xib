@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -58,10 +58,10 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fQU-Vm-ueZ" customClass="CustomRoundedCornerView" customModule="Delivery" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="520" width="414" height="150"/>
+                            <rect key="frame" x="0.0" y="650" width="414" height="20"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="150" id="rYe-Vh-2sp"/>
+                                <constraint firstAttribute="height" constant="20" id="rYe-Vh-2sp"/>
                             </constraints>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="topLeftCornerRadius">
@@ -73,7 +73,7 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="7GL-Yn-cWG">
-                            <rect key="frame" x="0.0" y="482" width="414" height="28"/>
+                            <rect key="frame" x="0.0" y="612" width="414" height="28"/>
                         </pageControl>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -98,7 +98,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fns-9u-KLU">
-                    <rect key="frame" x="0.0" y="550" width="414" height="312"/>
+                    <rect key="frame" x="0.0" y="720" width="414" height="142"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8J-8F-D29" customClass="RoundedCornerUIButton" customModule="Delivery" customModuleProvider="target">
@@ -156,7 +156,7 @@
                 <constraint firstItem="W8k-YX-evn" firstAttribute="trailing" secondItem="Fns-9u-KLU" secondAttribute="trailing" id="SkC-I7-PBy"/>
                 <constraint firstAttribute="bottom" secondItem="i8J-8F-D29" secondAttribute="bottom" constant="40" id="f6T-gI-Xvk"/>
                 <constraint firstItem="dTs-pL-V0u" firstAttribute="top" secondItem="S9z-7i-7MY" secondAttribute="topMargin" id="fkS-qH-24k"/>
-                <constraint firstItem="Fns-9u-KLU" firstAttribute="top" secondItem="dTs-pL-V0u" secondAttribute="bottom" constant="-120" id="hLW-rH-3ac"/>
+                <constraint firstItem="Fns-9u-KLU" firstAttribute="top" secondItem="dTs-pL-V0u" secondAttribute="bottom" constant="50" id="hLW-rH-3ac"/>
                 <constraint firstItem="dTs-pL-V0u" firstAttribute="leading" secondItem="S9z-7i-7MY" secondAttribute="leading" id="nEj-FO-sEt"/>
                 <constraint firstAttribute="trailing" secondItem="i8J-8F-D29" secondAttribute="trailing" constant="20" id="pU0-yi-2PN"/>
                 <constraint firstAttribute="trailing" secondItem="dTs-pL-V0u" secondAttribute="trailing" id="uVw-rz-Xwf"/>

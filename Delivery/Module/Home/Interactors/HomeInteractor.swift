@@ -15,7 +15,7 @@ protocol HomeUseCase {
 }
 
 class HomeInteractor{
-    let homeProvider = MoyaProvider<HomeService>()
+    let homeProvider = MoyaProvider<HomeService>(session: AlamofireManager.session)
 }
 
 extension  HomeInteractor : HomeUseCase{

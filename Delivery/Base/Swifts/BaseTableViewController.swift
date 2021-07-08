@@ -7,12 +7,12 @@
 
 import UIKit
 
-var topViewInitialHeight : CGFloat = UIScreen.main.bounds.height * 0.8
+var topViewInitialHeight : CGFloat = UIScreen.main.bounds.height * 0.7
 
 let topViewFinalHeight : CGFloat = 0
 let topViewHeightConstraintRange = topViewFinalHeight..<topViewInitialHeight
 
-protocol InnerTableViewScrollDelegate: class {
+protocol InnerTableViewScrollDelegate: AnyObject {
     
     var currentHeaderHeight: CGFloat { get }
     func innerTableViewDidScroll(withDistance scrollDistance: CGFloat)

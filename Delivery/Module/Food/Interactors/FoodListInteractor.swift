@@ -15,7 +15,7 @@ protocol FoodListUseCase {
 }
 
 class FoodListInteractor {
-    let foodProvider = MoyaProvider<FoodService>()
+    let foodProvider = MoyaProvider<FoodService>(session : AlamofireManager.session)
 }
 
 extension  FoodListInteractor: FoodListUseCase{

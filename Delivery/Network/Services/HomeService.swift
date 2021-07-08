@@ -14,10 +14,6 @@ enum HomeService {
 
 extension HomeService : TargetType{
     
-    var baseURL: URL{
-        return NetworkConfig.baseUrl
-    }
-    
     var path: String{
         switch self {
         case .getBannerList:
@@ -26,23 +22,6 @@ extension HomeService : TargetType{
             return "categoryList"
         }
     }
-    
-    var method: Moya.Method{
-        return .get
-    }
-    
-    var sampleData: Data {
-        return Data()
-    }
-    
-    public var task: Task {
-        return .requestPlain
-    }
-    
-    public var headers: [String: String]? {
-        return ["Content-Type": "application/json"]
-    }
-    
     
 }
 
